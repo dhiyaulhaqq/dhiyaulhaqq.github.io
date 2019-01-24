@@ -2,30 +2,9 @@
 <html>
 <head>
 	<title>Bar Volume</title>
-	<style>
-		h1 {
-			color: white;
-			background-color:DodgerBlue;
-			border-bottom:2px solid grey;
-			padding:10px 20px;
-			margin-top:0;
-		}
-		div {
-			background-color:lightgrey;
-			box-shadow:10px 10px 10px grey;
-			width:400px;
-			margin:70px 20px;
-			padding:20px;
-		}
-		.btn {
-			font-size:16px;
-		}
-		#result {
-			color:white;
-			background-color:DodgerBlue;
-			padding:4px 10px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
 <div>
@@ -33,33 +12,16 @@
 
 <form name="bar_Volume">
 	Panjang<br>
-	<input type="number" name="length" required><br>
+	<input type="number" name="length" value=10 required><br>
 	Lebar<br>
-	<input type="number" name="width" required><br>
+	<input type="number" name="width" value=20 required><br>
 	Tinggi<br>
-	<input type="number" name="height" required><br><br>
+	<input type="number" name="height" value=30 required><br><br>
 
-	<input class="btn" type="button" value="Hitung" onclick="calculate()">
+	<input class="btn" type="button" value="Hitung">
 </form>
 
 <h3><b id="result">Hasil</b></h3>
 </div>
-<script>
-	function calculate() {
-		forms = document.forms["bar_Volume"];
-		valid = forms.checkValidity();
-
-		if (valid) {
-			length = forms["length"].value;
-			width  = forms["width"].value;
-			height = forms["height"].value;
-			result = length * width * height;
-			document.getElementById('result').innerHTML = result;
-		}		
-
-		forms.reportValidity();
-	}
-</script>
-
 </body>
 </html>
