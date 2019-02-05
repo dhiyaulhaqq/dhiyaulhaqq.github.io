@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bar Volume</title>
+	<style>
+		h1 {
+			color: white;
+			background-color:DodgerBlue;
+			border-bottom:2px solid grey;
+			padding:10px 20px;
+			margin-top:0;
+		}
+		div {
+			background-color:lightgrey;
+			box-shadow:10px 10px 10px grey;
+			width:400px;
+			margin:70px 40px;
+			padding:20px;
+		}
+		.btn {
+			font-size:16px;
+		}
+		#result {
+			color:white;
+			background-color:DodgerBlue;
+			padding:4px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Bar Volume</h1>
+
+		<form name="bar_Volume">
+			<label for="length">Panjang</label><br>
+			<input type="number" name="length" required><br>
+			<label for="width">Lebar</label><br>
+			<input type="number" name="width" required><br>
+			<label for="height">Tinggi</label><br>
+			<input type="number" name="height" required><br><br>
+
+			<input class="btn" type="button" value="Hitung" onclick="calculate()">
+		</form>
+
+		<h3><b id="result">Hasil</b></h3>
+	</div>
+
+	<script>
+		function calculate() {
+			forms = document.forms["bar_Volume"];
+			valid = forms.checkValidity();
+
+			if (valid) {
+				length = forms["length"].value;
+				width  = forms["width"].value;
+				height = forms["height"].value;
+				result = length * width * height;
+				document.getElementById('result').innerHTML = result;
+			}		
+
+			forms.reportValidity();
+		}
+	</script>
+
+</body>
+</html>
