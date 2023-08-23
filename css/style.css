@@ -1,0 +1,151 @@
+:root {
+    --primary: #0d6efd;
+    --secondary: #555;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* start - hero section */
+
+header {
+    margin-top: 56px;
+    position: relative;
+}
+
+.banner {
+    padding: 20% 0;
+}
+
+.banner .text {
+    color: #fff;
+}
+
+.banner .image img,
+.banner .image:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner .image img {
+    object-fit: cover;
+}
+
+.banner .image:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bottom-border {
+    height: 30px;
+    background: var(--secondary);
+    z-index: -1;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    border: solid 5px #fff;
+    width: max(20vw, 100px);
+    height: max(20vw, 100px);
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+@media (min-width: 1025px) {
+    .banner .text h1 {
+        font-size: 6vw;
+    }
+}
+
+/* end - hero section */
+
+/* start - personal info section */
+
+.personal-info {
+    margin-top: max(10vw, 50px);
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--bs-gray-dark);
+} 
+
+#contact ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+}
+
+#contact li {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+#contact .social-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+#contact i {
+    font-size: 28px;
+    width: 45px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contact {
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+#about-me {
+    padding: 20px;
+}
+
+#about-me h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--bs-gray-dark);
+}
+
+#about-me p {
+    color: var(--bs-gray);
+}
+
+.skills {
+    padding: 20px;
+    color: var(--bs-gray-dark);
+}
+
+.skills h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.4rem;
+}
+
+/* end - personal info section */
+
+footer {
+    /* padding: 20px; */
+}
