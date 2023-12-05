@@ -7,7 +7,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/* start - hero section */
+/*=== start - hero section ===*/
 
 header {
     margin-top: 56px;
@@ -64,19 +64,68 @@ header {
     }
 }
 
-/* end - hero section */
+/*=== end - hero section ===*/
 
-/* start - personal info section */
+
+/*=== start - personal info section ===*/
 
 .personal-info {
     margin-top: max(10vw, 50px);
 }
 
+#about-me {
+    padding: 20px;
+}
+
+#about-me h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--bs-gray-dark);
+}
+
+#about-me p {
+    color: var(--bs-gray);
+}
+
+.skills {
+    padding: 20px;
+    color: var(--bs-gray-dark);
+}
+
+.skills h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.4rem;
+}
+
+/*=== end - personal info section ===*/
+
+
+
+/*=== Portofolio section ===*/
+
+#portofolio h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--bs-gray-dark);
+}
+
+/*=== End Portofolio section ===*/
+
+
+/*=== Contact section ===*/
+
 #contact h1 {
     text-align: center;
     margin-bottom: 50px;
     color: var(--bs-gray-dark);
-} 
+}
 
 #contact ul {
     list-style-type: none;
@@ -113,38 +162,8 @@ header {
     margin-bottom: 30px;
 }
 
-#about-me {
-    padding: 20px;
-}
+/*=== End Contact section ===*/
 
-#about-me h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--bs-gray-dark);
-}
-
-#about-me p {
-    color: var(--bs-gray);
-}
-
-.skills {
-    padding: 20px;
-    color: var(--bs-gray-dark);
-}
-
-.skills h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.skills .progress {
-    background-color: #cde1f8;
-    margin: 0.5rem 0 1.2rem 0;
-    border-radius: 0;
-    height: 0.4rem;
-}
-
-/* end - personal info section */
 
 footer {
     /* padding: 20px; */
